@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    padding-top: 100px;
+    padding-inline: 10px;
+    width: 100%;
+}
+
+
+.game-over {
+    opacity: 0;
+    position: absolute;
+    left: 27%;
+    z-index: 999;
+
+    text-align: center;
+    color: white;
+    font-size: 44px;
+
+    width: 700px;
+    height: 400px;
+    background: url("./images/game-over.png") no-repeat;
+    background-size: 700px 400px;
+
+    transition: opacity .5s linear;
+}
+.game__window {
+    position: relative;
+    border-bottom: 3px solid #791779;
+    width: 100%;
+    max-width: 1000px;
+    height: 400px;
+    margin-inline: auto;
+    background: url("./images/bgGame.jpg");
+    background-size: 1000px 400px;
+    opacity: 1;
+
+
+}
+
+
+.point {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 10px;
+
+    background-color: #791779;
+    color: white;
+
+    font-size: 20px;
+}
+
+h2 {
+    padding: 0;
+    margin: 0;
+}
+
+.red {
+    position: absolute;
+    left: 150px;
+    bottom: -10px;
+    z-index: 3;
+
+    width: 120px;
+    height: 120px;
+    background-image: url("./images/red.png");
+    background-size: 120px 120px;
+}
+.jump {
+    animation: jump .55s linear;
+}
+
+.pig {
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    z-index: 2;
+
+    width: 100px;
+    height: 100px;
+    background: url("./images/pig.png") no-repeat;
+    background-size: 80px 80px;
+
+    /*opacity: 0;*/
+}
+
+.run {
+    animation: run 3s infinite linear;
+}
+
+.runLvl {
+    animation: run 2s infinite linear;
+}
+.runLvl2 {
+    animation: run 1s infinite linear;
+}
+
+@keyframes run {
+    0% {
+        right: 0;
+        opacity: 1;
+    }
+
+
+    100% {
+        right: 1000px;
+    }
+
+}
+
+
+
+@keyframes jump {
+    0% {
+        bottom: 0;
+    }
+    25% {
+        bottom: 100px;
+    }
+
+    50% {
+        bottom: 200px;
+    }
+
+    75% {
+        bottom: 100px;
+    }
+
+    100% {
+       bottom: 0;
+    }
+
+}
+
+.menu {
+    margin: 40px auto;
+    width: 200px;
+}
+
+.btn {
+    padding: 13px 22px;
+    text-align: center;
+    background-color: #791779;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: font-size .2s linear;
+}
+
+.menu .btn:hover {
+    font-size: 18px;
+}
