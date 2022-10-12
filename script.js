@@ -41,7 +41,6 @@ document.addEventListener("keypress", function (e){
 function jump () {
     if (character.classList != "jump") {
         character.classList.add("jump");
-        // count();
     }
     setTimeout(function (){
         character.classList.remove("jump");
