@@ -10,8 +10,8 @@ body {
 
 .game-over {
     opacity: 0;
-    margin: 0 auto;
-    position: relative;
+    position: absolute;
+    left: 32%;
     z-index: 999;
 
     text-align: center;
