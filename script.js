@@ -16,9 +16,12 @@ function count () {
 }
 
 function lvlUp () {
-    if (counter2 >= 3) {
-        issue.classList.remove("run");
-        issue.classList.add("runLvl");
+    if (counter2 >= 1) {
+        issue.style.animationDuration = "2s";
+    } if (counter2 >= 4) {
+        issue.style.animationDuration = "1.5s";
+    }if (counter2 >= 8) {
+        issue.style.animationDuration = "1s";
     }
 }
 
