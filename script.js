@@ -62,6 +62,7 @@ let isAlive = setInterval( function(){
     if(pigRight > 750 && pigRight < 800 && redBottom < 60 ) {
         document.getElementById("over").style.opacity = "1";
         document.getElementById("game").style.opacity = "0";
+        document.getElementById("menu").style.opacity = "0";
     }
 }, 100);
 
