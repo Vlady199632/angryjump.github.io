@@ -32,6 +32,7 @@ function start() {
 
 function pause (){
         issue.classList.remove("run");
+        issue.classList.remove("runLvl");
 }
 document.addEventListener("keypress", function (e){
     jump();
